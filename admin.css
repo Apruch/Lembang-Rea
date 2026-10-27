@@ -1,0 +1,94 @@
+:root{--bg:#eef1ec;--hijau:#58c41c;--hijau-teks:#2e8f12;--zamrud:#0a5c3a;--gelap:#0f2a1f;--teks:#14211a;--abu:#66726b;--shadow:0 8px 28px rgba(15,42,31,.08)}
+.adm-body{margin:0;background:var(--bg);font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--teks);line-height:1.6}
+.adm-app{display:grid;grid-template-columns:272px minmax(0,1fr);min-height:100vh}
+.adm-side{background:var(--gelap);color:#cfe3d6;position:sticky;top:0;height:100vh;overflow-y:auto;padding:20px 14px;display:flex;flex-direction:column;gap:2px}
+.adm-brand{display:flex;gap:12px;align-items:center;color:#fff;text-decoration:none;padding:4px 10px 14px;font:800 1.1rem 'Outfit',sans-serif}
+.adm-brand img{height:38px;width:auto}
+.adm-brand small{display:block;font:500 .75rem 'Plus Jakarta Sans',sans-serif;color:#8fb59d}
+.adm-grup{margin:16px 12px 6px;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#7fa48e}
+.adm-link{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;color:#cfe3d6;text-decoration:none;font-weight:500;font-size:.94rem}
+.adm-link svg{width:19px;height:19px;flex:none}
+.adm-link:hover{background:rgba(255,255,255,.09);color:#fff}
+.adm-link.on{background:var(--hijau);color:var(--gelap);font-weight:700}
+.adm-badge{margin-left:auto;background:#fff1c9;color:#7a5a00;font:700 .72rem 'Plus Jakarta Sans',sans-serif;border-radius:99px;padding:.05rem .6rem}
+.adm-bawah{margin-top:auto;padding-top:14px;border-top:1px solid rgba(255,255,255,.12)}
+.adm-main{min-width:0}
+.adm-top{display:flex;align-items:center;gap:14px;padding:14px clamp(16px,3vw,36px);background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.06);position:sticky;top:0;z-index:20}
+.adm-top h1{font:700 1.35rem 'Outfit',sans-serif;margin:0}
+.adm-user{margin-left:auto;display:flex;align-items:center;gap:10px;color:var(--abu);font-size:.92rem}
+.adm-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(150deg,#58c41c,#0a5c3a);color:#fff;display:grid;place-items:center;font-weight:700}
+.adm-burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:inherit;padding:2px 8px}
+.adm-overlay{display:none}
+.adm-content{padding:clamp(16px,3vw,36px);max-width:1400px}
+.adm-content>p{color:var(--abu);max-width:80ch;margin:0 0 20px}
+.adm-content .card{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:clamp(18px,2.5vw,30px);margin-bottom:22px}
+.adm-content h3{font:700 1.2rem 'Outfit',sans-serif;margin:0 0 12px}
+.adm-content label{display:block;font-weight:600;font-size:.9rem;margin:16px 0 6px}
+.adm-content input[type=text],.adm-content input[type=password],.adm-content input[type=date],.adm-content input[type=number],.adm-content input[type=file],.adm-content select,.adm-content textarea{width:100%;padding:.7rem .9rem;border:1.5px solid #d3dad4;border-radius:12px;font:inherit;background:#fff}
+.adm-content input:focus,.adm-content select:focus,.adm-content textarea:focus{outline:3px solid rgba(88,196,28,.35);border-color:var(--hijau)}
+.adm-content .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 20px}
+.adm-content .full{grid-column:1/-1}
+.adm-content .row{display:flex;gap:12px;flex-wrap:wrap}
+.adm-content .btn{display:inline-block;padding:.65rem 1.4rem;border-radius:999px;font:600 .92rem 'Plus Jakarta Sans',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.adm-content .btn-green{background:var(--hijau);color:var(--gelap)}.adm-content .btn-green:hover{background:#6ed42f}
+.adm-content .btn-outline{border-color:var(--hijau-teks);color:var(--hijau-teks);background:none}.adm-content .btn-outline:hover{background:var(--hijau);color:var(--gelap);border-color:var(--hijau)}
+.adm-content .btn.on{background:var(--hijau);border-color:var(--hijau);color:var(--gelap)}
+.adm-content .btn-sm{padding:.3rem .95rem;font-size:.84rem}
+.adm-content .btn-del{border-color:#c0392b;color:#c0392b;background:none}.adm-content .btn-del:hover{background:#c0392b;color:#fff}
+.adm-content .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.adm-content .alert{background:#fbe9e4;color:#8c2a14;padding:12px 16px;border-radius:12px;margin-bottom:16px}
+.adm-content .ok{background:#e2f3d3;color:var(--zamrud);padding:12px 16px;border-radius:12px;margin-bottom:16px;font-weight:500}
+.adm-content .table-wrap{overflow-x:auto}
+.adm-content table{width:100%;border-collapse:collapse;min-width:560px}
+.adm-content th{text-align:left;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--abu);padding:10px;border-bottom:2px solid #e3e8e4}
+.adm-content td{padding:12px 10px;border-bottom:1px solid #eef1ec;vertical-align:middle}
+.adm-content td img{width:64px;height:44px;object-fit:cover;border-radius:8px}
+.adm-content td form{display:inline}
+.adm-content .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.adm-content .grid .card{margin-bottom:0}
+.adm-content .badge{display:inline-block;padding:.15rem .75rem;border-radius:999px;font-size:.78rem;font-weight:600;background:#fff1c9;color:#7a5a00}
+.adm-content .badge.proses{background:#d9ecff;color:#0d4a85}.adm-content .badge.selesai{background:#dff5c8;color:var(--zamrud)}.adm-content .badge.tolak{background:#fbe9e4;color:#8c2a14}
+.adm-content .adm summary{display:flex;gap:14px;align-items:center;flex-wrap:wrap;cursor:pointer;list-style:none}
+.adm-content .adm+.adm{margin-top:0}
+.adm-content .adm .det{margin-top:14px;border-top:1px solid #e3e8e4;padding-top:14px}
+.adm-content .adm dl{display:grid;grid-template-columns:130px 1fr;gap:6px 14px;margin:0 0 14px}.adm-content .adm dt{color:var(--abu)}.adm-content .adm dd{margin:0;white-space:pre-line}
+/* ringkasan */
+.adm-sambut{background:linear-gradient(120deg,#0a5c3a,#0f2a1f)!important;color:#fff}
+.adm-sambut h2{font:700 1.7rem 'Outfit',sans-serif;margin:0 0 6px}.adm-sambut p{margin:0;opacity:.85}
+.adm-stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:22px}
+.adm-stat a{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:22px;text-decoration:none;color:inherit;border-top:5px solid var(--hijau);transition:transform .15s}
+.adm-stat a:hover{transform:translateY(-3px)}
+.adm-stat b{display:block;font:800 2.2rem 'Outfit',sans-serif;line-height:1.1;color:var(--zamrud)}
+.adm-stat span{color:var(--abu);font-size:.92rem}
+.adm-dua{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.adm-dua .card{margin-bottom:0}
+.adm-list{list-style:none;margin:0;padding:0}
+.adm-list li{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eef1ec;font-size:.92rem}
+.adm-list li:last-child{border-bottom:0}
+.adm-list small{color:var(--abu)}
+@media(max-width:960px){
+ .adm-app{grid-template-columns:1fr}
+ .adm-side{position:fixed;left:0;top:0;bottom:0;width:272px;z-index:60;transform:translateX(-100%);transition:transform .22s}
+ .adm-app.buka .adm-side{transform:none}
+ .adm-app.buka .adm-overlay{display:block;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55}
+ .adm-burger{display:block}
+ .adm-dua{grid-template-columns:1fr}
+ .adm-nama{display:none}
+}
+@media(max-width:640px){.adm-content table{min-width:480px}.adm-stat{grid-template-columns:repeat(2,1fr);gap:12px}.adm-stat a{padding:16px}.adm-stat b{font-size:1.8rem}}
+@media(prefers-reduced-motion:reduce){.adm-side,.adm-stat a{transition:none}}
+
+/* ===== Tata letak simetris ===== */
+.adm-content{margin-inline:auto}
+.adm-content .grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.adm-content .grid .card{display:flex;flex-direction:column;height:100%}
+.adm-dua{align-items:stretch}
+.adm-dua .card{height:100%}
+.adm-stat a{display:flex;flex-direction:column;justify-content:center;min-height:112px}
+.adm-desk{color:var(--abu);margin:0 0 12px;min-height:4.8em}
+.adm-prev{height:190px;border-radius:14px;background:#eef1ec;display:grid;place-items:center;overflow:hidden;color:var(--abu);font-size:.9rem}
+.adm-prev img{width:100%;height:100%;object-fit:contain}
+.adm-img .row{margin-top:auto;padding-top:20px}
+.adm-img input[type=file]{margin-bottom:0}
+@media(max-width:1100px){.adm-content .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.adm-content .grid{grid-template-columns:1fr}.adm-desk{min-height:0}}

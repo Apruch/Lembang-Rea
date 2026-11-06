@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struktur Organisasi - Lembang Rea Tulaklangi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/halaman.css">
+<link rel="stylesheet" href="css/organisasi.css">
+</head>
+<body class="situs">
+<header class="nav">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#58c41c"/><path d="M12 28c0-9 6-15 16-16 0 10-6 16-16 16zm0 0l9-9" fill="none" stroke="#0a3d27" stroke-width="2.5" stroke-linecap="round"/></svg>    <span>Lembang Rea Tulaklangi</span>
+  </a>
+  
+  <button class="burger" id="burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+    <span class="burger-bar" aria-hidden="true"></span>
+  </button>
+  
+  <nav class="menu" id="menu" aria-label="Navigasi utama">
+    <ul>
+                <li><a href="index.html">Beranda</a></li>
+                      <li class="has-dd on">
+        <button type="button" class="dd-btn" aria-expanded="false" aria-haspopup="true">Profil <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dd">
+                    <a href="profil.html">
+            <span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M9 22V12h6v10"/></svg></span>
+            <span><b>Tentang Desa</b><small>Sambutan dan sejarah Lembang Rea Tulaklangi</small></span>
+          </a>
+                    <a href="organisasi.html" class="on" aria-current="page">
+            <span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6 M5 15v-3h14v3 M12 9v3 M3 15h4v6H3z M17 15h4v6h-4z M10 15h4v6h-4z"/></svg></span>
+            <span><b>Struktur Organisasi</b><small>Bagan perangkat Pemerintah Lembang</small></span>
+          </a>
+                  </div>
+      </li>
+                      <li class="has-dd">
+        <button type="button" class="dd-btn" aria-expanded="false" aria-haspopup="true">Informasi <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dd">
+                    <a href="berita.html">
+            <span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h5"/></svg></span>
+            <span><b>Berita</b><small>Artikel, pengumuman, dan agenda desa</small></span>
+          </a>
+                    <a href="galeri.html">
+            <span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v18H3z M8.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z M21 15l-5-5L5 21"/></svg></span>
+            <span><b>Galeri</b><small>Foto alam, UMKM, dan budaya desa</small></span>
+          </a>
+                  </div>
+      </li>
+                      <li><a href="kontak.html">Kontak</a></li>
+              </ul>
+    <a href="login.html" class="btn btn-outline login-m">Login Admin</a>
+  </nav>
+  <a href="login.html" class="btn btn-outline login">Login Admin</a>
+</header>
+<main class="container py-5">
+  <div style="text-align: center; padding: 40px 20px 50px;">
+    <h1 style="font-weight: 800; font-size: clamp(2rem, 4vw, 2.8rem); margin: 0 0 10px; color: #1a1a1a;">
+      Struktur Organisasi
+    </h1>
+    <p style="color: #66726b; font-size: 1.1rem; margin: 0;">
+      Pemerintah Lembang Rea Tulaklangi
+    </p>
+
+  <div class="bagan-scroll">
+    <div class="bagan-container">
+        
+        <!-- LEVEL 1: KEPALA & BPL -->
+        <div class='org-card leader' style='top: 0px; left: 500px; width: 220px;'><div class='avatar bg-leader'>AL</div><div class='nama'>A. Laso' Butungan, S.H.</div><div class='jabatan'>KEPALA LEMBANG</div></div>        <div class='org-card bpl' style='top: 0px; left: 200px; width: 160px;'><div class='avatar bg-bpl'>B</div><div class='nama'>BPL</div><div class='jabatan'>BADAN PERWAKILAN LEMBANG</div></div>        <div class="line-dashed" style="top: 60px; left: 285px; width: 105px;"></div>
+
+        <!-- GARIS UTAMA (Spine) -->
+        <div class="line-v" style="top: 130px; left: 500px; height: 520px;"></div>
+
+        <!-- LEVEL 2: SEKRETARIS (Cabang Kanan) -->
+        <div class="line-h" style="top: 180px; left: 500px; width: 350px;"></div>
+        <div class='org-card sub' style='top: 110px; left: 850px; width: 170px;'><div class='avatar'>RH</div><div class='nama'>Rahmawati H., S.E.</div><div class='jabatan'>SEKRETARIS LEMBANG</div></div>
+        <!-- LEVEL 3: 3 KAUR (Di bawah Sekretaris) -->
+        <div class="line-v" style="top: 240px; left: 850px; height: 60px;"></div>
+        <div class="line-h" style="top: 300px; left: 630px; width: 440px;"></div>
+        
+        <div class="line-v" style="top: 300px; left: 630px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 320px; left: 630px; width: 170px;'><div class='avatar'>NP</div><div class='nama'>Nelwan Palimbong</div><div class='jabatan'>KAUR PELAPORAN & PERENCANAAN</div></div>
+        <div class="line-v" style="top: 300px; left: 850px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 320px; left: 850px; width: 170px;'><div class='avatar'>PK</div><div class='nama'>Patmawati Karuen</div><div class='jabatan'>KAUR UMUM</div></div>
+        <div class="line-v" style="top: 300px; left: 1070px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 320px; left: 1070px; width: 170px;'><div class='avatar'>RB</div><div class='nama'>Rika Baliallo, S.Th.</div><div class='jabatan'>KAUR KEUANGAN</div></div>
+        <!-- LEVEL 4: STAF KAUR UMUM -->
+        <div class="line-v" style="top: 450px; left: 850px; height: 40px;"></div>
+        <div class='org-card staf' style='top: 490px; left: 850px; width: 170px;'><div class='avatar xs'>RB</div><div class='nama'>Reni Borolino, S.Pd.</div><div class='jabatan'>STAF KAUR UMUM</div></div>
+        <!-- ============================================== -->
+
+        <!-- LEVEL 5: PARA KASI (Di bawah garis utama) -->
+        <div class="line-h" style="top: 650px; left: 150px; width: 700px;"></div>
+        
+        <div class="line-v" style="top: 650px; left: 150px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 670px; left: 150px; width: 170px;'><div class='avatar'>TP</div><div class='nama'>Tikayan Patodingan</div><div class='jabatan'>KASI PEMERINTAHAN</div></div>
+        <div class="line-v" style="top: 650px; left: 500px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 670px; left: 500px; width: 170px;'><div class='avatar'>NP</div><div class='nama'>Nurdin Panggoa</div><div class='jabatan'>KASI PEMBANGUNAN</div></div>
+        <div class="line-v" style="top: 650px; left: 850px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 670px; left: 850px; width: 170px;'><div class='avatar'>MA</div><div class='nama'>Marsuki Aco' Ruruk</div><div class='jabatan'>KASI KEMASYARAKATAN</div></div>
+        <!-- LEVEL 6: KEPALA KAMPUNG -->
+        <div class="line-v" style="top: 800px; left: 150px; height: 50px;"></div>
+        <div class='org-card sub' style='top: 850px; left: 150px; width: 170px;'><div class='avatar'>SA</div><div class='nama'>S.P. Ampulembang</div><div class='jabatan'>KEP. KAMPUNG REA KADODO</div></div>
+        <div class="line-v" style="top: 800px; left: 500px; height: 50px;"></div>
+        <div class='org-card sub' style='top: 850px; left: 500px; width: 170px;'><div class='avatar'>RP</div><div class='nama'>Rusman Patitingan</div><div class='jabatan'>KEP. KAMPUNG PA'BURAN</div></div>
+        <!-- Kepala Kampung Tulaklangi & Maloi (Bercabang 2 dari Kasi Kemasyarakatan) -->
+        <div class="line-v" style="top: 800px; left: 850px; height: 30px;"></div>
+        <div class="line-h" style="top: 830px; left: 750px; width: 200px;"></div>
+
+        <div class="line-v" style="top: 830px; left: 750px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 850px; left: 750px; width: 170px;'><div class='avatar'>SS</div><div class='nama'>Serli Sirenden</div><div class='jabatan'>KEP. KAMPUNG TULAKLANGI</div></div>
+        <div class="line-v" style="top: 830px; left: 950px; height: 20px;"></div>
+        <div class='org-card sub' style='top: 850px; left: 950px; width: 170px;'><div class='avatar'>YP</div><div class='nama'>Yohanis Paluta</div><div class='jabatan'>KEP. KAMPUNG MALOI</div></div>
+    </div>
+  </div>
+</main>
+
+<footer class="foot" id="kontak">
+  <div class="foot-grid">
+    <div>
+      <h3>Lembang Rea Tulaklangi</h3>
+      <p>Alamat: Jl. Poros Makale Bituang</p>
+      <p>Telepon: 0812-4288-6155</p>
+      <p>Email: lembangreatulaklangi01@gmail.com</p>
+    </div>
+    <div>
+      <h3>Tautan cepat</h3>
+      <p><a href="index.html">Beranda</a></p><p><a href="profil.html">Profil</a></p><p><a href="index.html#layanan">Layanan</a></p><p><a href="organisasi.html">Organisasi</a></p><p><a href="berita.html">Berita</a></p><p><a href="galeri.html">Galeri</a></p><p><a href="kontak.html">Kontak</a></p>
+    </div>
+    <iframe class="map" title="Peta lokasi Lembang Rea Tulaklangi" loading="lazy" src="https://www.google.com/maps?q=Tana+Toraja&amp;output=embed"></iframe>
+  </div>
+  <p class="copy">&copy; 2026 Lembang Rea Tulaklangi. Hak cipta dilindungi.</p>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>

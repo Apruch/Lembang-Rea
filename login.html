@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk Admin - Lembang Rea Tulaklangi</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  <main class="auth-box">
+    <h1 style="font-size:1.9rem">Masuk Admin</h1>
+    <p>Khusus pengelola website Lembang Rea Tulaklangi.</p>
+        <div class="alert" id="pesan-login" hidden></div>
+    <form id="form-login" autocomplete="off">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required autofocus>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required>
+      <button type="submit" class="btn btn-green">Masuk</button>
+    </form>
+    <a class="back" href="index.html">Kembali ke beranda</a>
+  </main>
+<script src="js/login.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* =========================================
+   SISTEM KOORDINAT BAGAN ORGANISASI ABSOLUT
+   ========================================= */
+.bagan-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 20px 40px; /* Tambahan padding agar ada ruang lega di kiri-kanan */
+    background: #f4f6f5;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    -webkit-overflow-scrolling: touch; /* Membuat scroll HP lebih mulus */
+}
+
+.bagan-container {
+    width: 1200px; 
+    height: 1020px; 
+    position: relative;
+    margin: 0; /* Menghapus 'margin: 0 auto' agar tidak ditarik keluar layar di HP */
+}
+
+/* Memposisikan bagan di tengah HANYA saat dibuka di Laptop/PC */
+@media (min-width: 1250px) {
+    .bagan-container {
+        margin: 0 auto;
+    }
+}
+
+/* Desain Kartu */
+.org-card {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #d1d5d3;
+    border-radius: 14px;
+    padding: 14px 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transform: translateX(-50%); /* Menengahkan posisi dari titik kordinat */
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.org-card.leader { background: #0a4d3c; color: #fff; border: none; }
+.org-card.leader .jabatan { color: #a3e6cd; }
+.org-card.bpl { background: transparent; border: 1px solid #8fa398; }
+.org-card.sub { background: #fcfdfc; }
+.org-card.staf { border-top: 3px solid #0a4d3c; }
+
+/* Desain Avatar */
+.avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 1.05rem;
+    background: #58c41c; color: #fff;
+    margin-bottom: 10px;
+}
+.avatar.bg-leader { background: #58c41c; }
+.avatar.bg-bpl { background: #66726b; }
+.avatar.xs { width: 34px; height: 34px; font-size: 0.8rem; margin-bottom: 6px; }
+
+/* Teks */
+.nama { font-weight: 700; font-size: 0.88rem; line-height: 1.3; margin-bottom: 4px; }
+.jabatan { font-size: 0.68rem; font-weight: 600; color: #66726b; text-transform: uppercase; line-height: 1.2;}
+.org-card.leader .nama { font-size: 1rem; }
+
+/* Garis Penghubung */
+.line-v { position: absolute; width: 2px; background: #66726b; transform: translateX(-50%); z-index: 1; }
+.line-h { position: absolute; height: 2px; background: #66726b; z-index: 1; }
+.line-dashed { position: absolute; height: 2px; border-bottom: 2px dashed #66726b; z-index: 1; }
